@@ -1,0 +1,95 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    font-family: "MuseoModerno", sans-serif;
+    background-color: #161b33;
+}
+
+.logo {
+    transition: all .2s ease-in-out;
+    display: flex;
+    justify-content: space-around;
+    color: #f1dac4;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 22px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 35%;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    color: #f1dac4;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.grow {
+    transition: all .2s ease-in-out;
+    display: flex;
+    justify-content: space-around;
+}
+.grow:hover {
+    transform: scale(1.5);
+}
+
+.logo:hover {
+    transform: scale(1.1);
+    
+}
+
+.shrink {
+    transition: all .2s ease-in-out;
+}
+
+.shrink:hover {
+    transform: scale(0.9);
+}
+
+.burger {
+    display: none;
+}
+
+.burger div {
+    width: 25px;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    margin: 5px;
+}
+
+@media screen and (max-width: 1024px) {
+    body {
+        .nav-links {
+            width: 60%;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        display: none;
+        .nav-links{
+            position: absolute;
+            right: 0px;
+            height: 92vh;
+            top:8vh;
+
+        }
+    }
+}
